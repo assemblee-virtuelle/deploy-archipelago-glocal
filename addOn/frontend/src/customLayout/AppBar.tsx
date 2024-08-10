@@ -49,7 +49,7 @@ const AppBar = () => {
         </Box>
 
         <Stack sx={{ flexGrow: 1, display: { xs: 'none', md: 'block' } }} spacing={2} direction="row">
-          <Button color="inherit" size="large" startIcon={<MapIcon />} component={Link} to={'https://flod.io'} target="_blank">
+          <Button color="inherit" size="large" startIcon={<MapIcon />} component={Link} to={'https://gl.flod.io'} target="_blank">
             Carte en réseau
           </Button>
           <Button color="inherit" size="large" startIcon={<MapIcon />} component={Link} to={'/Organization?view=map'}>

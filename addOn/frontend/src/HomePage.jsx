@@ -15,7 +15,7 @@ const HomePage = () => {
     <Grid container spacing={2} sx={{ marginY: 2 }}>
       <Grid item xs={12} md={6} lg={4}>
         <Card>
-          <CardActionArea component={Link} to="https://flod.io">
+          <CardActionArea component={Link} to="https://gl.flod.io">
             <CardMedia
               component="img"
               height="200px"
@@ -85,7 +85,7 @@ const HomePage = () => {
       </Grid>
       <Grid item xs={12} md={6} lg={4}>
         <Card>
-          <CardActionArea component={Link} to="/Page/https%3A%2F%2Fdata.flod.io%2Fpages%2Fa-propos/show">
+          <CardActionArea component={Link} to="/Page/https%3A%2F%2Fdata.gl.assemblee-virtuelle.org.io%2Fpages%2Fa-propos/show">
             <CardMedia
               component="img"
               sx={{ paddingTop: 2, maxHeight: "200px", maxWidth: "200px", margin: "auto" }}
