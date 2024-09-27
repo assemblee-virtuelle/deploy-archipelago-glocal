@@ -10,7 +10,7 @@ const ResourcesMenu = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
   const resourceDefinitions = useResourceDefinitions<{ label: string }>();
-  const hiddenResources = useMemo(() => ['Organization', 'Event'], []);
+  // const hiddenResources = useMemo(() => ['Organization', 'Event'], []);
   const resources = useMemo(
     () => Object.values(resourceDefinitions).filter((r) => r.hasList && !hiddenResources.includes(r.name)),
     [resourceDefinitions, hiddenResources],
