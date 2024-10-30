@@ -12,8 +12,10 @@ const ResourcesMenu = () => {
   const resourceDefinitions = useResourceDefinitions<{ label: string }>();
   // const hiddenResources = useMemo(() => ['Organization', 'Event'], []);
   const resources = useMemo(
-    () => Object.values(resourceDefinitions).filter((r) => r.hasList && !hiddenResources.includes(r.name)),
-    [resourceDefinitions, hiddenResources],
+    // () => Object.values(resourceDefinitions).filter((r) => r.hasList && !hiddenResources.includes(r.name)),
+    () => Object.values(resourceDefinitions).filter((r) => r.hasList),
+    // [resourceDefinitions, hiddenResources],
+    [resourceDefinitions],
   );
 
   if (!isLogged) {
